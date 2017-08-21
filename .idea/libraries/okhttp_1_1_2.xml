@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="okhttp-1.1.2">
+    <CLASSES>
+      <root url="jar://C:/Android/.android/build-cache/9b2b1554b83bc10e362fefc3b1086114e9977a8e/output/jars/classes.jar!/" />
+      <root url="file://C:/Android/.android/build-cache/9b2b1554b83bc10e362fefc3b1086114e9977a8e/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.yanzhenjie.nohttp/okhttp/1.1.2/5476383dd5ade617ff86b53f4a422192b8e098ea/okhttp-1.1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

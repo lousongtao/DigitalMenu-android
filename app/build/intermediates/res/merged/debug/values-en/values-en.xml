@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">DigitalMenu</string>
+    <string name="chinese_version">中文</string>
+    <string name="choosed_food_item">Items : </string>
+    <string name="choosed_food_label">ORDERS</string>
+    <string name="choosed_food_price">Price : </string>
+    <string name="english_version">English</string>
+    <string name="order_button">order</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_test_tab">TestTabActivity</string>
+</resources>
