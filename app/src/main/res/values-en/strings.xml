@@ -5,7 +5,7 @@
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="english_version">English</string>
     <string name="chinese_version">中文</string>
-    <string name="order_button">order</string>
+    <string name="order_button">Check Out</string>
     <string name="choosed_food_item">Items : </string>
     <string name="choosed_food_price">Price : </string>
     <string name="choosed_food_label">ORDERS</string>

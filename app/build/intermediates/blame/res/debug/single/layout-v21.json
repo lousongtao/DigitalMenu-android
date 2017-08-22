@@ -1,10 +1,22 @@
 [
     {
+        "merged": "G:\\workspace-android\\digitalmenu-android\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Android\\.android\\build-cache\\df6c5469356fd865ed9890183684430c9d44ac2e\\output\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
         "merged": "G:\\workspace-android\\DigitalMenu\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
         "source": "C:\\Android\\.android\\build-cache\\df6c5469356fd865ed9890183684430c9d44ac2e\\output\\res\\layout-v21\\notification_action_tombstone.xml"
     },
     {
+        "merged": "G:\\workspace-android\\digitalmenu-android\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Android\\.android\\build-cache\\df6c5469356fd865ed9890183684430c9d44ac2e\\output\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
         "merged": "G:\\workspace-android\\DigitalMenu\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
+        "source": "C:\\Android\\.android\\build-cache\\df6c5469356fd865ed9890183684430c9d44ac2e\\output\\res\\layout-v21\\notification_action.xml"
+    },
+    {
+        "merged": "G:\\workspace-android\\digitalmenu-android\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
         "source": "C:\\Android\\.android\\build-cache\\df6c5469356fd865ed9890183684430c9d44ac2e\\output\\res\\layout-v21\\notification_action.xml"
     },
     {
@@ -13,6 +25,10 @@
     },
     {
         "merged": "G:\\workspace-android\\DigitalMenu\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Android\\.android\\build-cache\\df6c5469356fd865ed9890183684430c9d44ac2e\\output\\res\\layout-v21\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "G:\\workspace-android\\digitalmenu-android\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
         "source": "C:\\Android\\.android\\build-cache\\df6c5469356fd865ed9890183684430c9d44ac2e\\output\\res\\layout-v21\\notification_template_icon_group.xml"
     }
 ]

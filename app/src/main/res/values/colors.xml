@@ -7,16 +7,21 @@
     <color name="colorBlack">#000000</color>
 
     <color name="colorChoosedFoodBackground">#751A0E</color>
-    <color name="colorChoosedFoodListBackground">#cdccc7</color>
+    <color name="colorChoosedFoodListBackground">#72716f</color>
     <color name="colorCategory1Selected">#9C3703</color>
     <color name="colorCategory1Unselected">#751A0E</color>
     <color name="colorCategory1Container">#9c3703</color>
     <color name="colorCategory1Background">#751a0e</color>
 
+
     <color name="colorCategory2Selected">#c67e48</color>
     <color name="colorCategory2Unselected">#9c3703</color>
     <color name="colorCategory2Container">#c67e48</color>
     <color name="colorCategory2Background">#9c3703</color>
+
+
+    <color name="colorTabSelected">#9fcca0</color>
+    <color name="colorTabUnselected">#B7D3A3</color>
 
     <color name="colorFoodAreaBG">#751A0E</color>
 

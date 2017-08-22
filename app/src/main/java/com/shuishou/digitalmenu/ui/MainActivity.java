@@ -1,5 +1,7 @@
 package com.shuishou.digitalmenu.ui;
 
+import android.app.ActivityManager;
+import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -7,6 +9,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
@@ -298,8 +301,9 @@ public class MainActivity extends AppCompatActivity implements OperateChoosedFoo
         for(ChoosedFood cf : choosedFoodList){
             totalPrice += cf.getAmount() * cf.getPrice();
         }
+        double gst = totalPrice / 11;
         tvChoosedItems.setText(String.valueOf(choosedFoodList.size()));
-        tvChoosedPrice.setText("$" + String.format("%.2f", totalPrice));
+        tvChoosedPrice.setText("$" + String.format("%.2f", totalPrice) + " (GST $" + (String.format("%.2f", gst)) + ")");
     }
 
     public static MainActivity getInstance(){
@@ -417,5 +421,23 @@ public class MainActivity extends AppCompatActivity implements OperateChoosedFoo
                 .setMessage(msg)
                 .setNegativeButton("OK", null)
                 .create().show();
+    }
+
+    //屏蔽实体按键BACK
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        switch (keyCode){
+            case KeyEvent.KEYCODE_BACK:
+                return true;
+        }
+        return super.onKeyDown(keyCode, event);
+    }
+
+    //屏蔽recent task 按键
+    @Override
+    protected void onPause() {
+        super.onPause();
+        ActivityManager activityManager = (ActivityManager) getApplicationContext() .getSystemService(Context.ACTIVITY_SERVICE);
+        activityManager.moveTaskToFront(getTaskId(), 0);
     }
 }

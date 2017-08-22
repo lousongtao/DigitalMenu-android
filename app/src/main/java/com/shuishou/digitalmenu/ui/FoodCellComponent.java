@@ -1,6 +1,9 @@
 package com.shuishou.digitalmenu.ui;
 
 import android.content.Context;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
+import android.text.Layout;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -33,6 +36,7 @@ public class FoodCellComponent extends LinearLayout {
     private ImageView ivChili1;
     private ImageView ivChili2;
     private ImageView ivChili3;
+    private View layDishPicture;
 
     private Dish dish;
 
@@ -48,6 +52,7 @@ public class FoodCellComponent extends LinearLayout {
         ivChili1 = (ImageView) findViewById(R.id.imgChili1);
         ivChili2 = (ImageView) findViewById(R.id.imgChili2);
         ivChili3 = (ImageView) findViewById(R.id.imgChili3);
+        layDishPicture = findViewById(R.id.layDishPicture);
         chooseButton = (ImageButton) findViewById(R.id.chooseBtn);
         chooseButton.setImageResource(ICON_SELECT_BUTTON);
         chooseButton.setOnClickListener(new OnClickListener() {
@@ -59,7 +64,7 @@ public class FoodCellComponent extends LinearLayout {
 
         foodNameText.setTxtChinese(dish.getChineseName());
         foodNameText.setTxtEnglish(dish.getEnglishName());
-        foodPriceText.setText("$ " + String.valueOf(dish.getPrice()));
+        foodPriceText.setText("$ " + String.format("%.2f", dish.getPrice()));
         foodNameText.show(MainActivity.getInstance().getLanguage());
         ivNew.setVisibility(dish.isNew() ? View.VISIBLE : View.INVISIBLE);
         ivSoldOut.setVisibility(dish.isSoldOut() ? View.VISIBLE : View.INVISIBLE);
@@ -72,5 +77,9 @@ public class FoodCellComponent extends LinearLayout {
     public void setSoldOutVisibility(boolean isSoldOut){
         dish.setSoldOut(isSoldOut);
         ivSoldOut.setVisibility(dish.isSoldOut() ? View.VISIBLE : View.INVISIBLE);
+    }
+
+    public void setPicture(Drawable d){
+        layDishPicture.setBackground(d);
     }
 }

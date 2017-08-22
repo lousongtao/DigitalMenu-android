@@ -45,8 +45,8 @@ public class ChoosedFoodAdapter extends ArrayAdapter<ChoosedFood> {
         TextView tvAddtionalRequirements = (TextView) view.findViewById(R.id.choosedfood_addtionrequirements);
         ImageView plusImage = (ImageView) view.findViewById(R.id.choosedfood_add_icon);
         ImageView minusImage = (ImageView) view.findViewById(R.id.choosedfood_minus_icon);
-        ImageView addRequirementsImage = (ImageView) view.findViewById(R.id.choosedfood_info_icon);
-        ImageView deleteImage = (ImageView) view.findViewById(R.id.choosedfood_delete_icon);
+//        ImageView addRequirementsImage = (ImageView) view.findViewById(R.id.choosedfood_info_icon);
+//        ImageView deleteImage = (ImageView) view.findViewById(R.id.choosedfood_delete_icon);
 
         tvAmount.setText(cf.getAmount()+"");
         tvAddtionalRequirements.setText(cf.getAdditionalRequirements());
@@ -55,7 +55,7 @@ public class ChoosedFoodAdapter extends ArrayAdapter<ChoosedFood> {
         tvFoodName.setTxtEnglish(cf.getName_en());
         tvFoodName.setTxtChinese(cf.getName_cn());
         tvFoodName.show(MainActivity.getInstance().getLanguage());
-        tvFoodPrice.setText("$" + cf.getPrice());
+        tvFoodPrice.setText("$" + String.format("%.2f", cf.getPrice()));
 
         plusImage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,19 +71,19 @@ public class ChoosedFoodAdapter extends ArrayAdapter<ChoosedFood> {
             }
         });
 
-        addRequirementsImage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                operator.addRequirements(position);
-            }
-        });
-
-        deleteImage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                operator.deleteDish(position);
-            }
-        });
+//        addRequirementsImage.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                operator.addRequirements(position);
+//            }
+//        });
+//
+//        deleteImage.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                operator.deleteDish(position);
+//            }
+//        });
         return view;
     }
 

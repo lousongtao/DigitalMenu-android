@@ -5,11 +5,11 @@
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="english_version">English</string>
     <string name="chinese_version">中文</string>
-    <string name="order_button_en">order</string>
+    <string name="order_button_en">Check Out</string>
     <string name="choosed_food_item_en">Items : </string>
     <string name="choosed_food_price_en">Price : </string>
     <string name="choosed_food_label_en">ORDERS</string>
-    <string name="order_button_cn">下单</string>
+    <string name="order_button_cn">下  单</string>
     <string name="choosed_food_item_cn">已选 : </string>
     <string name="choosed_food_price_cn">价格 : </string>
     <string name="choosed_food_label_cn">订单</string>

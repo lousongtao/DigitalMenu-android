@@ -193,5 +193,137 @@
                 }
             }
         ]
+    },
+    {
+        "outputFile": "G:\\workspace-android\\digitalmenu-android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en\\values-en.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 52,
+                    "endOffset": 103
+                },
+                "from": {
+                    "file": "G:\\workspace-android\\digitalmenu-android\\app\\src\\main\\res\\values-en\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 108,
+                    "endColumn": 48,
+                    "endOffset": 152
+                },
+                "from": {
+                    "file": "G:\\workspace-android\\digitalmenu-android\\app\\src\\main\\res\\values-en\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 157,
+                    "endColumn": 46,
+                    "endOffset": 199
+                },
+                "from": {
+                    "file": "G:\\workspace-android\\digitalmenu-android\\app\\src\\main\\res\\values-en\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 204,
+                    "endColumn": 54,
+                    "endOffset": 254
+                },
+                "from": {
+                    "file": "G:\\workspace-android\\digitalmenu-android\\app\\src\\main\\res\\values-en\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 259,
+                    "endColumn": 53,
+                    "endOffset": 308
+                },
+                "from": {
+                    "file": "G:\\workspace-android\\digitalmenu-android\\app\\src\\main\\res\\values-en\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 313,
+                    "endColumn": 55,
+                    "endOffset": 364
+                },
+                "from": {
+                    "file": "G:\\workspace-android\\digitalmenu-android\\app\\src\\main\\res\\values-en\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 369,
+                    "endColumn": 51,
+                    "endOffset": 416
+                },
+                "from": {
+                    "file": "G:\\workspace-android\\digitalmenu-android\\app\\src\\main\\res\\values-en\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 421,
+                    "endColumn": 50,
+                    "endOffset": 467
+                },
+                "from": {
+                    "file": "G:\\workspace-android\\digitalmenu-android\\app\\src\\main\\res\\values-en\\strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 366,
+                        "endColumn": 50,
+                        "endOffset": 412
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 472,
+                    "endColumn": 73,
+                    "endOffset": 541
+                },
+                "from": {
+                    "file": "G:\\workspace-android\\digitalmenu-android\\app\\src\\main\\res\\values-en\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 546,
+                    "endColumn": 67,
+                    "endOffset": 609
+                },
+                "from": {
+                    "file": "G:\\workspace-android\\digitalmenu-android\\app\\src\\main\\res\\values-en\\strings.xml"
+                }
+            }
+        ]
     }
 ]

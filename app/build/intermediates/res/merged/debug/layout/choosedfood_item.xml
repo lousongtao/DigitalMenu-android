@@ -2,22 +2,22 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="horizontal"
-    android:layout_width="match_parent"
+    android:layout_width="250dp"
     android:layout_height="match_parent"
-    android:baselineAligned="false">
+    android:baselineAligned="false"
+    android:orientation="horizontal">
 
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="120dp"
-        android:layout_height="130dp">
+        android:layout_height="130dp"
+        android:orientation="horizontal">
 
         <ImageView
+            android:id="@+id/choosedfood_image"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:id="@+id/choosedfood_image"
-            android:scaleType="centerInside"
             android:layout_weight="1"
+            android:scaleType="centerInside"
             tools:ignore="ContentDescription" />
     </LinearLayout>
 
@@ -75,7 +75,7 @@
                 android:layout_weight="1"
                 android:contentDescription="plus dish amount"
                 android:scaleType="centerInside"
-                android:src="@drawable/jiahao"
+                android:src="@drawable/jiahao1"
                 tools:ignore="HardcodedText" />
 
             <TextView
@@ -96,30 +96,7 @@
                 android:layout_marginStart="5dp"
                 android:layout_weight="1"
                 android:scaleType="centerInside"
-                android:src="@drawable/jianhao"
-                tools:ignore="ContentDescription" />
-
-            <ImageView
-                android:id="@+id/choosedfood_info_icon"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginStart="5dp"
-                android:layout_weight="1"
-                android:contentDescription=""
-                android:scaleType="centerInside"
-                android:src="@drawable/info"
-                tools:ignore="ContentDescription" />
-
-            <ImageView
-                android:id="@+id/choosedfood_delete_icon"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginStart="5dp"
-                android:layout_weight="1"
-                android:scaleType="centerInside"
-                android:src="@drawable/delete"
+                android:src="@drawable/jianhao1"
                 tools:ignore="ContentDescription" />
 
         </LinearLayout>
