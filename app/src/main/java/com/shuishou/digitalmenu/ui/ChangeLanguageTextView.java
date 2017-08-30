@@ -32,9 +32,15 @@ public class ChangeLanguageTextView extends android.support.v7.widget.AppCompatT
 
     public void show(byte language){
         if (language == MainActivity.LANGUAGE_CHINESE){
-            setText(txtChinese);
+            if (txtChinese.length() > 10)
+                setText(txtChinese.substring(0, 10) + "...");
+            else
+                setText(txtChinese);
         } else if (language == MainActivity.LANGUAGE_ENGLISH){
-            setText(txtEnglish);
+            if (txtEnglish.length() > 15)
+                setText(txtEnglish.substring(0, 15) + "...");
+            else
+                setText(txtEnglish);
         }
     }
 

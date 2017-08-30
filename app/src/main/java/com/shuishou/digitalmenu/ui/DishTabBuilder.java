@@ -47,11 +47,11 @@ public class DishTabBuilder {
 
             TabHost.TabSpec ts = thCategory1.newTabSpec(c1.getChineseName());
             ChangeLanguageTextView text = new ChangeLanguageTextView(mainActivity, c1.getChineseName(), c1.getEnglishName());
-            text.setTextSize(30);
+            text.setTextSize(32);
             text.setGravity(Gravity.CENTER);
 //            text.setBackgroundResource(R.color.colorCategory1Background);
             text.show(language);
-            text.setLayoutParams(new LinearLayout.LayoutParams(250, 40));
+            text.setLayoutParams(new LinearLayout.LayoutParams(250, 45));
             ts.setIndicator(text);
 
             ts.setContent(new TabHost.TabContentFactory() {
@@ -89,11 +89,11 @@ public class DishTabBuilder {
             final Category2 c2 = c2s.get(i);
             TabHost.TabSpec ts = th.newTabSpec(c2.getChineseName());
             ChangeLanguageTextView text = new ChangeLanguageTextView(context, c2.getChineseName(), c2.getEnglishName());
-            text.setTextSize(25);
+            text.setTextSize(27);
             text.setGravity(Gravity.CENTER);
 //            text.setBackgroundResource(R.color.colorCategory2Background);
             text.show(language);
-            text.setLayoutParams(new LinearLayout.LayoutParams(200, 40));
+            text.setLayoutParams(new LinearLayout.LayoutParams(200, 45));
             ts.setIndicator(text);
 
             ts.setContent(new TabHost.TabContentFactory() {

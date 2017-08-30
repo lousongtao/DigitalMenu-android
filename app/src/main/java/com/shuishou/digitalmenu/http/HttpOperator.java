@@ -414,11 +414,12 @@ public class HttpOperator {
      * @param orders
      * @param deskid
      */
-    public void makeOrder(String code, String orders, int deskid){
+    public void makeOrder(String code, String orders, int deskid, int customerAmount){
         Request<JSONObject> makeOrderRequest = NoHttp.createJsonObjectRequest(InstantValue.URL_TOMCAT + "/indent/makeindent", RequestMethod.POST);
         makeOrderRequest.add("confirmCode", code);
         makeOrderRequest.add("indents", orders);
         makeOrderRequest.add("deskid", deskid);
+        makeOrderRequest.add("customerAmount", customerAmount);
         requestQueue.add(WHAT_VALUE_MAKEORDER, makeOrderRequest, responseListener);
     }
 

@@ -30,6 +30,7 @@ public class PostOrderDialog {
 
     private Spinner spDesk;
     private EditText txtCode;
+    private Spinner spCustomerAmount;
 
     private List<ChoosedFood> choosedFoodList;
     private HttpOperator httpOperator;
@@ -47,6 +48,8 @@ public class PostOrderDialog {
         View view = LayoutInflater.from(mainActivity).inflate(R.layout.makeorder_layout, null);
         txtCode = (EditText) view.findViewById(R.id.txt_confirmcode);
         spDesk = (Spinner) view.findViewById(R.id.spinner_desk);
+        spCustomerAmount = (Spinner) view.findViewById(R.id.spinner_customer);
+        spCustomerAmount.setSelection(0);
         initDeskData(mainActivity.getDesks());
         AlertDialog.Builder builder = new AlertDialog.Builder(mainActivity);
         builder.setTitle("Confirm");
@@ -93,7 +96,9 @@ public class PostOrderDialog {
             return;
         }
         if (os != null){
-            httpOperator.makeOrder(txtCode.getText().toString(), os.toString(), ((Desk)spDesk.getSelectedItem()).getId());
+            httpOperator.makeOrder(txtCode.getText().toString(), os.toString(),
+                    ((Desk)spDesk.getSelectedItem()).getId(),
+                    Integer.parseInt(spCustomerAmount.getSelectedItem().toString()));
         }
     }
 
